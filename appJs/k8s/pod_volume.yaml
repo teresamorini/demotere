@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-js
+  labels:
+    name: app-js
+spec:
+  containers:
+  - name: app-js
+    image: appjs
+    imagePullPolicy: Never
+    ports:
+      - containerPort: 8080
+    env:
+      - name: USER_ID
+        value: Marco
+    volumeMounts:
+      - name: app-config
+        mountPath: /usr/src/app/config/
+  volumes:
+    - name: app-config
+      configMap:
+        name: appjs-config
