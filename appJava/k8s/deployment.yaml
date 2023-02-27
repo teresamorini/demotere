@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-java
+  labels:
+    name: appjava-deploy
+spec:
+  selector:
+    matchLabels:
+      run: app-java
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: app-java
+    spec:
+      containers:
+      - name: app-java
+        image: appjava
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-java
+  labels:
+    name: app-java
+spec:
+  containers:
+  - name: app-java
+    image: appjava
+    imagePullPolicy: Never
+    ports:
+      - containerPort: 8080

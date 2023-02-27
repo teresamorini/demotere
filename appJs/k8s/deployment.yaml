@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-js
+  labels:
+    name: app-js
+spec:
+  selector:
+    matchLabels:
+      app: app-js
+  template:
+    metadata:
+      labels:
+        app: app-js
+    spec:
+      containers:
+        - name: app-js
+          image: appjs
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
+  replicas: 3
