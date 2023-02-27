@@ -11,3 +11,9 @@ spec:
     imagePullPolicy: Never
     ports:
       - containerPort: 8080
+    env:
+      - name: USER_ID
+        value: Marco
+    envFrom:
+    - configMapRef:
+        name: appjs-config

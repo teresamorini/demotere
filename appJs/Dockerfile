@@ -6,9 +6,8 @@ WORKDIR /usr/src/app
 # Copy over the whole folder content
 COPY . ./
 
-# Make a clean npm install and only install modules
-# needed for production
-RUN npm ci --only=production
+# Make a clean npm install
+RUN npm ci --omit=dev
 
 EXPOSE 8080
 

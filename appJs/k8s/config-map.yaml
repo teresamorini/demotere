@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: appjs-config
 data:
-  USER_ID: Teresa
+  APP_OWNER: Teresa
