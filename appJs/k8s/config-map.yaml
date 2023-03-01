@@ -4,3 +4,4 @@ metadata:
   name: appjs-config
 data:
   APP_OWNER: Teresa
+  USER_ID_CONFIG: Marco from config

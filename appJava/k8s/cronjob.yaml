@@ -16,5 +16,5 @@ spec:
             command:
             - /bin/sh
             - -ec
-            - curl 'http://10.96.100.16:8080/email'
+            - curl 'http://app-java:8080/email'
           restartPolicy: Never

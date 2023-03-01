@@ -11,3 +11,9 @@ spec:
     imagePullPolicy: Never
     ports:
       - containerPort: 8080
+    # readinessProbe:
+    #   httpGet:
+    #     path: /email
+    #     port: 8080
+    #   initialDelaySeconds: 60
+    #   periodSeconds: 60
