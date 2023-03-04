@@ -7,16 +7,16 @@ metadata:
 spec:
   selector:
     matchLabels:
-      run: app-java
+      name: app-java
   replicas: 2
   template:
     metadata:
       labels:
-        run: app-java
+        name: app-java
     spec:
       containers:
       - name: app-java
         image: appjava
         imagePullPolicy: Never
         ports:
-        - containerPort: 80
+        - containerPort: 8080

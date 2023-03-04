@@ -16,5 +16,5 @@ spec:
             command:
             - /bin/sh
             - -ec
-            - curl 'http://app-java:8080/email'
+            - curl 'http://appjava-service-clusterip:8080/email'
           restartPolicy: Never
