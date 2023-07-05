@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webapp
+spec:
+  containers:
+  - image: nginx
+    imagePullPolicy: Always
+    name: nginx
+    resources: {}
+  - image: agentx
+    imagePullPolicy: Always
+    name: agentx
+    resources: {}
+  restartPolicy: Always

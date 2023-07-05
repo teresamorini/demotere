@@ -1,0 +1,15 @@
+Run Pod using definition file webapp-color.yaml
+Run command: kubectl port-forward pod/webapp-color 8080:8080
+Open from the browser: http://localhost:8080/
+
+Update the environment variable on the POD to display a green background.
+View the changes to the web application UI
+
+Create a new ConfigMap for the webapp-color POD. 
+Use the spec given below:
+ConfigMap Name: webapp-config-map
+Data: APP_COLOR=darkblue
+Data: APP_OTHER=disregard
+
+Update the environment variable on the POD to use only the APP_COLOR key from the newly created ConfigMap.
+View the changes to the web application UI

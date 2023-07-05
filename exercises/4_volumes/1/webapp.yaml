@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webapp
+spec:
+  containers:
+  - env:
+    - name: LOG_HANDLERS
+      value: file
+    image: kodekloud/event-simulator
+    imagePullPolicy: Always
+    name: event-simulator
+    resources: {}
+  restartPolicy: Always

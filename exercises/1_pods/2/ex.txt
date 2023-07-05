@@ -1,0 +1,8 @@
+Create a new pod using the file definition webapp.yaml
+
+How many containers are part of the pod webapp?
+What images are used in the new webapp pod?
+What is the state of the container agentx in the pod webapp?
+Why do you think the container agentx in pod webapp is in error?
+What does the READY column in the output of the kubectl get pods command indicate?
+Delete the pod webapp.

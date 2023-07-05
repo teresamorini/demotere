@@ -1,0 +1,6 @@
+Run Pod using definition file webapp.yaml
+The application stores logs at location /log/app.log.
+You can see the logs with the following command: kubectl exec webapp -- cat /log/app.log
+
+If the POD was to get deleted now, would you be able to view these logs?
+Configure a volume to store these logs at /var/log/webapp on the host.

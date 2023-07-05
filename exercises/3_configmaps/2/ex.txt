@@ -1,0 +1,3 @@
+Apply the ConfigMap using the definition file db-config.yaml
+
+Identify the database host from the config map db-config.

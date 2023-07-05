@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    name: webapp-color
+  name: webapp-color
+spec:
+  containers:
+  - env:
+    - name: APP_COLOR
+      value: pink
+    image: mmumshad/simple-webapp-color
+    imagePullPolicy: Always
+    name: webapp-color
+    resources: {}
+  restartPolicy: Always

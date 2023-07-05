@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: db-config
+data:
+  DB_HOST: SQL01.example.com
+  DB_NAME: SQL01
+  DB_PORT: "3306"
