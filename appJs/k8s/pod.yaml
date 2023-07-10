@@ -18,6 +18,6 @@ spec:
         #   configMapKeyRef:
         #     name: appjs-config
         #     key: USER_ID_CONFIG
-    envFrom:
-    - configMapRef:
-        name: appjs-config
+    #envFrom:
+    #- configMapRef:
+    #    name: appjs-config
