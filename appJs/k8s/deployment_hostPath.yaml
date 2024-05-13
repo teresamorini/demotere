@@ -13,10 +13,18 @@ spec:
       labels:
         app: app-js
     spec:
+      volumes:
+      - name: cache-volume
+        hostPath:
+          path: /cache
+          type: Directory
       containers:
         - name: app-js
           image: appjs
           imagePullPolicy: Never
           ports:
             - containerPort: 8080
+          volumeMounts:
+          - mountPath: /cache
+            name: cache-volume
   replicas: 3

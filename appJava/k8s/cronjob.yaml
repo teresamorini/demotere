@@ -19,3 +19,4 @@ spec:
             - -ec
             - curl 'http://appjava-service-clusterip:8080/email'
           restartPolicy: Never
+      backoffLimit: 2
